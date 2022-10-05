@@ -36,7 +36,7 @@ namespace KURSACH_1
             double C30 = 0;
             double C50 = 0;
             double t = 0;
-            Console.WriteLine(Math.Abs(C10 + (-K2 * C10 * C30 - 3 * K1 * C10 * C20 - 2 * K3 * C10 * C20) / 0.1 - C10));
+            Console.WriteLine((-K2 * C10 * C30 - 3 * K1 * C10 * C20 - 2 * K3 * C10 * C20) / 0.1);
             while (true)
            // for (int i = 0; i < 200;i++)
             {
@@ -46,9 +46,9 @@ namespace KURSACH_1
                 C3 = C30 + (K1 * C10 * C20 - K2 * C10 * C30 ) / 0.1;
                 C5 = C50 + (K2 * C10 * C30 ) / 0.1;
                 chart1.Series[0].Points.AddXY(t, C1*10);
-                if((Math.Round(C1, 4) - C10 < e)/* && (Math.Abs(C2 - C20) < e) && (Math.Abs(C3 - C30) < e) && (Math.Abs(C5 - C50) < e)*/)
+                if(((Math.Abs(C1 - C10) < e)/* && (Math.Abs(C2 - C20) < e) && (Math.Abs(C3 - C30) < e) && (Math.Abs(C5 - C50) < e)*/))
                 {
-                    Console.WriteLine(Math.Round(C1, 4) - C10);
+                    Console.WriteLine(Math.Abs(C1));
                     break;
                 }
                 C10 = C1;
