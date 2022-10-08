@@ -60,7 +60,7 @@ namespace KURSACH_1
         {
             InitializeComponent();
 
-            Console.WriteLine(find_C(300));
+            Console.WriteLine(find_C(400));
         }
     }
 }
