@@ -50,16 +50,11 @@ namespace KURSACH_1
                 K3 = A3 * Math.Exp(-E3 / (R * T));
                 C1 = C10 + (-K2 * C10 * C30 - 3 * K1 * C10 * C20 - 2 * K3 * C10 * C20) ;
                 C2 = C20 + (-K1 * C10 * C20 - 4 * K1 * C10 * C20) ;
-                C3 = C30 + (K1 * C10 * C20 - K2 * C10 * C30);
+                C3 = C30 + (K1 * C10 * C20 - K2 * C10 * C30) ;
                 C5 = C50 + (K2 * C10 * C30) ;
-                T = T0 + ((-Kt * f * (T0 - Tt)) + K1 * C10 * C20 * Q1 * m / p + K2 * C10 * C30 * Q2 * m / p)/Ct/m ;
+                T = T0 + ((-Kt * f * (T0 - Tt)) + K1 * 3*C10 * C20 * Q1 * m / p + K2 * C10 * C30 * Q2 * m / p)/Ct/m ;
 
-
-                chart1.Series[0].Points.AddXY(t, C1);
-                chart2.Series[0].Points.AddXY(t, C2);
-                chart3.Series[0].Points.AddXY(t, C3);
-                chart4.Series[0].Points.AddXY(t, C5);
-                chart5.Series[0].Points.AddXY(t, T);
+               
                 C10 = C1;
                 C20 = C2;
                 C30 = C3;
@@ -82,10 +77,12 @@ namespace KURSACH_1
             
             for (double f = 7; f < 12; f +=1)
             {
-                for (int m = 2000; m < 3000; m+=10)
+                for (int m = 0; m < 3001; m+=10)
                 {
+
                     //Console.WriteLine(find_C(f, m));
-                    if(find_C(f, m) > n)
+
+                    if (find_C(f, m) >= n)
                     {
                         n = find_C(f ,m);
                         nf = f;
@@ -95,7 +92,7 @@ namespace KURSACH_1
 
                 }
             }
-                // find_C(7, 2000);
+            
             Console.WriteLine("n = "+ n);
             Console.WriteLine("nf = " + nf);
             Console.WriteLine("nm = " + nm);
