@@ -1,7 +1,7 @@
 ﻿
-namespace KURSACH_1
+namespace KURSAVAYA
 {
-    partial class Form1
+    partial class Optimizatsiya
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -34,12 +34,24 @@ namespace KURSACH_1
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -78,11 +90,25 @@ namespace KURSACH_1
             this.chart4.Name = "chart4";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series3.Legend = "Legend1";
+            series3.LegendText = "123";
+            series3.LegendToolTip = "йцу";
             series3.Name = "Series1";
             this.chart4.Series.Add(series3);
             this.chart4.Size = new System.Drawing.Size(388, 347);
             this.chart4.TabIndex = 3;
             this.chart4.Text = "chart4";
+            title1.Name = "С4";
+            title1.Text = "С4";
+            title2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            title2.Name = "Title1";
+            title2.Text = "t";
+            title3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title3.Name = "Title2";
+            title3.Text = "C";
+            this.chart4.Titles.Add(title1);
+            this.chart4.Titles.Add(title2);
+            this.chart4.Titles.Add(title3);
             // 
             // chart3
             // 
@@ -97,6 +123,17 @@ namespace KURSACH_1
             this.chart3.Size = new System.Drawing.Size(360, 347);
             this.chart3.TabIndex = 2;
             this.chart3.Text = "chart3";
+            title4.Name = "Title1";
+            title4.Text = "C3";
+            title5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title5.Name = "Title2";
+            title5.Text = "C";
+            title6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            title6.Name = "Title3";
+            title6.Text = "t";
+            this.chart3.Titles.Add(title4);
+            this.chart3.Titles.Add(title5);
+            this.chart3.Titles.Add(title6);
             // 
             // chart2
             // 
@@ -111,6 +148,17 @@ namespace KURSACH_1
             this.chart2.Size = new System.Drawing.Size(388, 352);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
+            title7.Name = "Title1";
+            title7.Text = "C2";
+            title8.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            title8.Name = "Title2";
+            title8.Text = "t";
+            title9.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title9.Name = "Title3";
+            title9.Text = "C";
+            this.chart2.Titles.Add(title7);
+            this.chart2.Titles.Add(title8);
+            this.chart2.Titles.Add(title9);
             // 
             // chart1
             // 
@@ -125,6 +173,18 @@ namespace KURSACH_1
             this.chart1.Size = new System.Drawing.Size(360, 352);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            title10.Name = "Title1";
+            title10.Text = "C1";
+            title11.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title11.Name = "Title2";
+            title11.Text = "C";
+            title12.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            title12.Name = "Title3";
+            title12.Text = "t";
+            this.chart1.Titles.Add(title10);
+            this.chart1.Titles.Add(title11);
+            this.chart1.Titles.Add(title12);
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // Form1
             // 
